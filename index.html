@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>OBLAAT</title>
+<meta name="description" content="OBLAATはコーディングしたページ表示上に画像(png, jpg, gif)をかぶせて差異を比較できる制作支援ブックマークツールです。">
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href=favicon.ico>
+<meta name=robots content="index, follow">
+<meta property=og:title content=OBLAAT>
+<meta property=og:type content=website>
+<meta property=og:url content="http://mizzz.jp/oblaat/">
+<meta property=og:image content="http://mizzz.jp/oblaat/thumb.png">
+<meta property=og:site_name content=OBLAAT>
+<meta property=og:description content="OBLAATはコーディングしたページ表示上に画像(png, jpg, gif)をかぶせて差異を比較できる制作支援ブックマークツールです。">
+<meta property=fb:admins content=100000792396641>
+<script>var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-34817901-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="wrapper">
+<header class="g-header">
+	<h1><a href="/oblaat/">OBLAAT</a></h1>
+	<ul class="social">
+		<li><div class="fb-like" data-href="http://mizzz.jp/oblaat/" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false"></div></li>
+		<li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-count="vertical">ツイート</a></li>
+		<li><a href="http://b.hatena.ne.jp/entry/http://mizzz.jp/oblaat/" class="hatena-bookmark-button" data-hatena-bookmark-title="OBLAAT" data-hatena-bookmark-layout="vertical-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+	</ul>
+</header>
+
+<div class="cf">
+	<section class="about">
+		<h2>OBLAATとは</h2>
+		<p>OBLAATはコーディングしたページ表示上に画像(png, jpg, gif)をかぶせて表示することができる制作支援ブックマークツールです。。デザインとの差異の比較などにご利用ください。</p>
+	</section>
+
+	<section class="browser">
+		<h2>対象ブラウザ</h2>
+		<ul>
+			<li>・Chrome</li>
+			<li>・Firefox</li>
+			<li>・Safari(6以上)</li>
+			<li><small><span class="alert">※</span>Drag and Drop, File, FileReader APIが必要です</small></li>
+		</ul>
+	</section>
+</div>
+
+<section class="use">
+	<h2>Oblaatの使い方</h2>
+	<div>
+		<section class="step">
+			<h3>ブックマークに登録</h3>
+			<p>下のラベル↓をブックマークバーにドロップして、ブックマークに登録してください</p>
+			<p class="bookmark">
+				<!-- <a href="javascript:(function(w)%7Bvar%20flg%3DBoolean(w.File%26%26w.FileReader%26%26w.FileList)%3Bif(!flg)%7Balert(%27Not%20Supported%27)%3Breturn%3B%7Dvar%20d%3Dw.document,h%3Dd.getElementsByTagName(%27head%27)%5B0%5D,s%3Dd.createElement(%27script%27)%3Bs.src%3D%27http://study/products/oblaat/oblaat.js%27%3Bs.type%3D%27text/javascript%27%3Bh.appendChild(s)%3B%7D)(window)%3B" title="OBLAAT v1.0">OBLAAT<br>v1.0</a> -->
+				<a href="javascript:(function(w)%7Bvar%20flg%3DBoolean(w.File%26%26w.FileReader%26%26w.FileList)%3Bif(!flg)%7Balert(%27Not%20Supported%27)%3Breturn%3B%7Dvar%20d%3Dw.document,h%3Dd.getElementsByTagName(%27head%27)%5B0%5D,s%3Dd.createElement(%27script%27)%3Bs.src%3D%27http://160.16.94.172/oblaat/oblaat.js%27%3Bs.type%3D%27text/javascript%27%3Bh.appendChild(s)%3B%7D)(window)%3B" title="OBLAAT v1.0">OBLAAT<br>v1.0</a>
+			</p>
+			<p><small><span class="alert">※</span>また、クリックして実際に動かしていただければ、現在お使いのブラウザで利用可能かわかります。</small></p>
+		</section>
+
+		<section class="step">
+			<h3>画像ロード方法</h3>
+			<div>
+				<p>(1) 画像を重ねたいページを表示して、登録したOBLAATブックマークをクリックします</p>
+				<p>(2) 表示されたモーダルウインドウのドロップエリアに画像を直接ドロップするか、ファイルを選択してロードします</p>
+				<p>(3) ロードした画像はウインドウの左上を原点(x: 0, y: 0)として表示されます</p>
+			</div>
+			<img src="img/img_drop.png" alt="">
+		</section>
+
+		<section class="step">
+			<h3>操作方法</h3>
+			<div>
+				<p>ウィンドウ右側のコントローラーにより画像を操作できます。</p>
+				<ul>
+					<li>(1) サブウインドウを表示します (クリック)</li>
+					<li>(2) 画像の透明度を変更します (ドラッグ)</li>
+					<li>(3) 画像を表示・非表示します (クリック)</li>
+					<li>(4) 画像を移動します (クリック)<br>
+						<small><span class="alert">※</span>画像は直接ドラッグしたり方向キーで移動することもできます</small><br>
+						<small><span class="alert">※</span>シフトキーを押しながらだと、10pxづつ移動できます</small>
+					</li>
+					<li>(5) 画像の位置を固定します (クリック)</li>
+					<li>(6) 画像の位置を保存します (クリック)<br>
+						<small><span class="alert">※</span>Local Storageを使用していますので、同一オリジン毎の保存になります</small>
+					</li>
+					<li>(7) 保存した画像の位置を消去します (クリック)</li>
+					<li>(8) 保存した画像の位置を呼び出します (クリック)</li>
+
+				</ul>
+			</div>
+			<img src="img/img_main.png" alt="">
+		</section>
+
+		<section class="step">
+			<h3>ショートカット</h3>
+			<ul>
+				<li>・画像位置固定のオン, オフ → <span class="alert">[Shift] + [Q]</span></li>
+				<li>・画像表示のオン, オフ → <span class="alert">[Ctrl] + [Q]</span></li>
+				<li>・コントローラー表示のオン, オフ → <span class="alert">[Ctrl] + [Shift] + [Q]</span></li>
+			</ul>
+		</section>
+	</div>
+</section>
+
+<aside class="product">
+	<h2>制作ツール</h2>
+	<div class="cf">
+		<article>
+			<a href="http://mizzz.jp/tg/" target="_blank" title="Template Generator" class="thumb"><img src="img/img_tg.jpg" height="193" width="240" alt="Template Generator"></a>
+			<h3><a href="http://mizzz.jp/tg/" target="_blank" title="Template Generator">Template Generator</a></h3>
+			<p>HTML5のテンプレートを簡単に作成できます</p>
+		</article>
+
+		<article>
+			<a href="http://mizzz.jp/legion/" target="_blank" title="Region The Array Maker" class="thumb"><img src="img/img_legion.jpg" height="182" width="240" alt="Region The Array Maker"></a>
+			<h3><a href="http://mizzz.jp/legion/" target="_blank" title="Region The Array Maker">Region The Array Maker</a></h3>
+			<p>数万単位の配列や任意の文字列から配列の値をつくるツールです</p>
+		</article>
+	</div>
+</aside>
+
+<footer class="g-footer">
+	<p><small>Copyright &copy; <script>document.write(new Date().getFullYear());</script> <a href="/oblaat/">OBLAAT</a> All Rights Reserved.</small></p>
+</footer>
+<!-- wrapper --></div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<!-- <script>window.jQuery||document.write("<script src='js/jquery-1.9.1.min.js'>\x3C/script>")</script> -->
+</body>
+</html>

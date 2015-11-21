@@ -1,0 +1,408 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+img {
+	font-size: 0;
+	line-height: 0;
+	vertical-align: bottom;
+}
+
+・blockquote, q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+small {
+	font-size: 85%;
+}
+
+hr {
+	border: none;
+	border-top: 1px dotted #ccc;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption, th {
+	text-align: left;
+}
+
+caption {
+	display: none;
+}
+
+input,
+select,
+textarea {
+	font-size: 100%;
+	color: #666666;
+	vertical-align: middle;
+}
+
+legend {
+	display: none;
+}
+
+.cf, .g-header .social, .step, .product div, .bookmark {
+	zoom: 1;
+}
+.cf:after, .g-header .social:after, .step:after, .product div:after, .bookmark:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+@font-face {
+	font-family: 'Philosopher';
+	font-style: normal;
+	font-weight: 400;
+	src: local("Philosopher"), url(http://themes.googleusercontent.com/static/fonts/philosopher/v4/OttjxgcoEsufOGSINYBGLbrIa-7acMAeDBVuclsi6Gc.woff) format("woff");
+}
+
+/*----------------------------------------
+	基本スタイル
+----------------------------------------*/
+body {
+	background: white;
+	font-family: serif;
+	font-size: 13px;
+	color: #666666;
+	line-height: 1.5;
+	background: #fcfcfc url("../img/diagonal_waves.png") 0 0 repeat;
+}
+
+/*
+Font-size list (base: 13px)
+ 62% =  8px
+ 70% =  9px
+ 77% = 10px
+ 85% = 11px  162% = 21px  239% = 31px
+ 93% = 12px  170% = 22px  247% = 32px
+100% = 13px  177% = 23px  254% = 33px
+108% = 14px  185% = 24px  262% = 34px
+116% = 15px  193% = 25px  270% = 35px
+124% = 16px  200% = 26px  277% = 36px
+131% = 17px  208% = 27px  285% = 37px
+139% = 18px  216% = 28px  293% = 38px
+147% = 19px  224% = 29px  300% = 39px
+154% = 20px  231% = 30px  308% = 40px
+*/
+h1 {
+	position: relative;
+	margin: 16px 0 48px;
+	font-family: "Philosopher", serif;
+	font-size: 369%;
+	color: #333;
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	line-height: 1;
+	-webkit-text-shadow: 1px 1px 0 #fff;
+	-moz-text-shadow: 1px 1px 0 #fff;
+	text-shadow: 1px 1px 0 #fff;
+}
+h1 a::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 16px;
+	left: 13px;
+	width: 9px;
+	height: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #a51600;
+	background: -webkit-linear-gradient(top, #a51600, #8b1300);
+	background: -moz-linear-gradient(top, #a51600, #8b1300);
+	background: -ms-linear-gradient(top, #a51600, #8b1300);
+	background: linear-gradient(to bottom, #a51600, #8b1300);
+	-webkit-box-shadow: 1px 1px 0 #fff;
+	-moz-box-shadow: 1px 1px 0 #fff;
+	box-shadow: 1px 1px 0 #fff;
+}
+
+h2 {
+	position: relative;
+	margin-top: 32px;
+	margin-bottom: 8px;
+	margin-left: 24px;
+	padding-left: 1em;
+	font-family: "Philosopher", serif;
+	font-size: 185%;
+	color: #444;
+	letter-spacing: 0.1em;
+	line-height: 1;
+	-webkit-text-shadow: 1px 1px 0 #fff;
+	-moz-text-shadow: 1px 1px 0 #fff;
+	text-shadow: 1px 1px 0 #fff;
+}
+h2::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0.8em;
+	height: 1em;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #a51600;
+	background: -webkit-linear-gradient(top, #a51600, #8b1300);
+	background: -moz-linear-gradient(top, #a51600, #8b1300);
+	background: -ms-linear-gradient(top, #a51600, #8b1300);
+	background: linear-gradient(to bottom, #a51600, #8b1300);
+	-webkit-box-shadow: 1px 1px 0 #fff;
+	-moz-box-shadow: 1px 1px 0 #fff;
+	box-shadow: 1px 1px 0 #fff;
+}
+
+h3 {
+	margin-top: 24px;
+	margin-bottom: 4px;
+	font-family: serif;
+	font-size: 124%;
+	color: #444;
+	letter-spacing: 0.05em;
+	line-height: 1;
+}
+
+a {
+	color: #333333;
+	text-decoration: none;
+}
+a:hover {
+	color: #333333;
+}
+
+img {
+	width: 100%;
+}
+
+.alert {
+	color: #a51600;
+	font-weight: bold;
+}
+
+/*----------------------------------------
+	ページ固有スタイル
+----------------------------------------*/
+#wrapper {
+	width: 800px;
+	margin: 0 auto;
+	background: transparent;
+}
+
+.g-header {
+	position: relative;
+}
+.g-header .social {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #eee;
+	background: rgba(255, 255, 255, 0.4);
+	padding: 8px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.g-header .social li {
+	float: left;
+	margin-left: 8px;
+}
+
+.about {
+	float: left;
+	width: 400px;
+}
+.about p {
+	background: #eee;
+	background: rgba(255, 255, 255, 0.4);
+	padding: 32px 24px;
+	border: 8px solid #fff;
+	border: 8px solid rgba(255, 255, 255, 0.4);
+	border-right: none;
+	-webkit-border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px;
+	text-align: justify;
+}
+
+.browser {
+	float: left;
+	width: 400px;
+}
+.browser ul {
+	background: #eee;
+	background: rgba(255, 255, 255, 0.4);
+	padding: 32px 24px;
+	border: 8px solid #fff;
+	border: 8px solid rgba(255, 255, 255, 0.4);
+	border-left: none;
+	-webkit-border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
+}
+
+.use > div {
+	background: #eee;
+	background: rgba(255, 255, 255, 0.4);
+	padding: 32px 24px;
+	border: 8px solid #fff;
+	border: 8px solid rgba(255, 255, 255, 0.4);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.use section:first-child h3 {
+	margin-top: 0;
+}
+
+.step div {
+	float: right;
+	width: 256px;
+	margin-top: 10px;
+}
+.step img {
+	float: left;
+	width: 480px;
+}
+.step p,
+.step li {
+	margin-bottom: 8px;
+	text-align: justify;
+}
+
+.product h3 {
+	overflow: hidden;
+	margin: 16px 16px 8px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.product p {
+	margin: 0 16px 16px;
+	text-align: justify;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.product div {
+	background: #eee;
+	background: rgba(255, 255, 255, 0.4);
+	padding: 32px 24px;
+	border: 8px solid #fff;
+	border: 8px solid rgba(255, 255, 255, 0.4);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.product article {
+	float: left;
+	width: 240px;
+	margin-left: 8px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+.product article:first-child {
+	margin-left: 0;
+}
+.product article .thumb {
+	display: block;
+	overflow: hidden;
+	height: 180px;
+	border-top: 16px solid white;
+	border-bottom: 16px solid white;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.bookmark {
+	margin: 8px 32px 32px;
+}
+
+.bookmark a {
+	float: left;
+	display: block;
+	width: 80px;
+	height: 60px;
+	padding-top: 20px;
+	margin-right: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #a51600;
+	background: -webkit-linear-gradient(top, #a51600, #8b1300);
+	background: -moz-linear-gradient(top, #a51600, #8b1300);
+	background: -ms-linear-gradient(top, #a51600, #8b1300);
+	background: linear-gradient(to bottom, #a51600, #8b1300);
+	-webkit-box-shadow: 1px 2px 2px rgba(63, 8, 0, 0.9);
+	-moz-box-shadow: 1px 2px 2px rgba(63, 8, 0, 0.9);
+	box-shadow: 1px 2px 2px rgba(63, 8, 0, 0.9);
+	font-family: "Philosopher", serif;
+	font-size: 124%;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 0.1em;
+	-webkit-text-shadow: -1px -1px 0 #420900;
+	-moz-text-shadow: -1px -1px 0 #420900;
+	text-shadow: -1px -1px 0 #420900;
+}
+.bookmark a:hover {
+	color: #fff;
+	opacity: 0.9;
+}
+
+footer p {
+	height: 64px;
+	line-height: 64px;
+	text-align: center;
+}
+footer small {
+	font-size: 100%;
+	letter-spacing: 0.1em;
+	-webkit-text-shadow: 1px 1px 0 #fff;
+	-moz-text-shadow: 1px 1px 0 #fff;
+	text-shadow: 1px 1px 0 #fff;
+}
+footer small a {
+	font-size: 185%;
+	color: #a51600;
+	font-family: "Philosopher", serif;
+}
