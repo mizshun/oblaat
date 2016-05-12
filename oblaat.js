@@ -3,7 +3,7 @@ var oblaat = oblaat || {};
 (function (w, obl) {
   'use strict';
 
-  var address = 'hmizzz.work';
+  var address = 'mizzz.work';
 
   var win  = w,
       doc  = win.document,
@@ -39,8 +39,6 @@ var oblaat = oblaat || {};
     },
 
     init: function (jq) {
-      console.log(jQuery.fn.jquery);
-
       var $           = jq,
           NAMESPACE   = 'oblaat',
           docH        = $(doc).height(),
