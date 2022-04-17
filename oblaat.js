@@ -13,21 +13,21 @@ var oblaat = oblaat || {};
   obl = {
     loader: function () {
       var ss_1  = doc.createElement('link');
-      ss_1.href = 'http://fonts.googleapis.com/css?family=Cinzel&subset=latin';
+      ss_1.href = 'https://fonts.googleapis.com/css?family=Cinzel&subset=latin';
       ss_1.rel  = 'stylesheet';
       ss_1.type = 'text/css';
       head.appendChild(ss_1);
 
       var ss2  = doc.createElement('link');
-      // ss2.href = 'http://study/products/oblaat/oblaat.css';
-      ss2.href = 'http://' + address + '/oblaat/oblaat.css';
+      // ss2.href = 'https://study/products/oblaat/oblaat.css';
+      ss2.href = 'https://' + address + '/oblaat/oblaat.css';
       ss2.rel  = 'stylesheet';
       ss2.type = 'text/css';
       head.appendChild(ss2);
 
       if (!window.jQuery) {
         var jq = doc.createElement('script');
-        jq.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js';
+        jq.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js';
         doc.body.appendChild(jq);
 
         jq.addEventListener('load', function () {
